@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+#navbar{
+    display: flex;
+    align-items: center;
+   position :relative;
+   top:0;
+}
+#navbar::before{
+    /* for black background and navigation bar */
+    content: "";
+    background-color: black;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   top: 0px;
+   left: 0px;
+
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    margin: 3px 6px; 
+    height:60px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2',cursive;
+}
+#navbar ul li{
+    list-style:none ;
+    font-size: 1.3rem;
+    display: table-cell;   
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+text-decoration: none;
+color: green;
+background-color: white;
+}
+.title{
+    font-size: 30px;
+    padding-right: 500px;
+    color: white;   
+}
+.container{
+    
+   
+   
+    background: url(https://c4.wallpaperflare.com/wallpaper/378/119/800/glare-circles-light-bright-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+    
+        
+ }
+ .main{
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.main_content h1{
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.main_content{
+    padding-right: 80px;
+}
+.explore{
+    align-self: flex-start;
+    background: white;
+    color: black;
+    border-radius: 40px;
+    margin-top: 60px;    
+}
+button{
+    padding: 15px 40px;
+    border: none;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    background-color: green;
+    color: white;
+}
+.main_img{
+    padding-top: 20px;
+    padding-left: 300px;
+}
